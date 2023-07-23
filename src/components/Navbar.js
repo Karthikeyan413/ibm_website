@@ -4,6 +4,7 @@ import { IoCloseSharp } from 'react-icons/io5'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Button } from './Button';
 import './Navbar.css'
+import { TbBrandReactNative } from 'react-icons/tb';
 
 const Navbar = () => {
   const [ click, setClick ] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
     <nav className='navbar'>
         <div className='navbar-container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-              IBM React
+              IBM React <TbBrandReactNative/>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <IoCloseSharp /> : <GiHamburgerMenu />}
